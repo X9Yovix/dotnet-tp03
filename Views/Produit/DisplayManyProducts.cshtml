@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "DisplayManyProducts";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    List<TP03.Models.Produit> produits = ViewData["produits"] as List<TP03.Models.Produit>;
+}
+
+<h2>DisplayManyProducts</h2>
+
+<ul>
+    @foreach (var produit in produits)
+    {
+        <li>Id: @produit.Id, Name: @produit.Name, Price: @produit.Price</li>
+    }
+</ul>

@@ -9,6 +9,6 @@ namespace TP03.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public double Prix { get; set; }
+        public double Price { get; set; }
     }
 }

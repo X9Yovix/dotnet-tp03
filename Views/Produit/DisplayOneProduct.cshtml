@@ -3,10 +3,17 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>DisplayOneProduct</h2>
-
-<ul>
-    <li>ID: @Model.Id</li>
-    <li>Name: @Model.Name</li>
-    <li>Price: @Model.Price</li>
-</ul>
+<table class="table table-bordered table-hover" style="margin-top:100px">
+    <tr>
+        <td>Product ID</td>
+        <td>@Model.Id</td>
+    </tr>
+    <tr>
+        <td>Product Name</td>
+        <td>@Model.Name</td>
+    </tr>
+    <tr>
+        <td>Product Price</td>
+        <td>@Model.Price</td>
+    </tr>
+</table>

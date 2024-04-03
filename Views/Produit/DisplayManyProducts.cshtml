@@ -4,11 +4,20 @@
     List<TP03.Models.Produit> produits = ViewData["produits"] as List<TP03.Models.Produit>;
 }
 
-<h2>DisplayManyProducts</h2>
-
-<ul>
+<table class="table table-bordered table-hover" style="margin-top:100px">
+    <tr>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        <th>Product Price</th>
+    </tr>
     @foreach (var produit in produits)
     {
-        <li>Id: @produit.Id, Name: @produit.Name, Price: @produit.Price</li>
+        <tr>
+            <td>@produit.Id</td>
+
+            <td>@produit.Name</td>
+
+            <td>@produit.Price</td>
+        </tr>
     }
-</ul>
+</table>
